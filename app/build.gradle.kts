@@ -1,19 +1,14 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.mapsplatform.secrets.plugin)
+    alias(libs.plugins.runique.android.application)
 }
 
 android {
     namespace = "com.example.runique"
-    compileSdk = 34
+
 
     defaultConfig {
-        applicationId = "com.example.runique"
-        minSdk = 24
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -30,13 +25,8 @@ android {
             )
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = "1.8"
-    }
+
+
     buildFeatures {
         compose = true
     }
