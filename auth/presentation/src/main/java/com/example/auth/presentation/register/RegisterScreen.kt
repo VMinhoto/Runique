@@ -48,7 +48,7 @@ import com.example.core.presentation.designsystem.components.RuniqueTextField
 import org.koin.androidx.compose.koinViewModel
 
 @Composable
-fun RegisterAction(
+fun RegisterScreenRoot(
      viewModel: RegisterViewModel = koinViewModel()
  ) {
      RegisterScreen(
