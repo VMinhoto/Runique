@@ -17,5 +17,5 @@ data class RegisterState(
     // State to know while the call to register is in progress
     val isRegistering: Boolean = false,
     // State to know if pw is valid and we are not registering
-    val canRegister: Boolean = passwordValidationState.isValidPassword && !isRegistering,
+    val canRegister: Boolean = false
 )
