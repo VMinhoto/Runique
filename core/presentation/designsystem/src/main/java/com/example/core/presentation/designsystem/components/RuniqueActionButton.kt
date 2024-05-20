@@ -46,19 +46,18 @@ fun RuniqueActionButton(
         modifier = modifier
             .height(IntrinsicSize.Min)
     ) {
-        Box (
+        Box(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(vertical = 8.dp),
             contentAlignment = Alignment.Center
-        ){
+        ) {
             CircularProgressIndicator(
                 modifier = Modifier
                     .size(15.dp)
                     .alpha(if (isLoading) 1f else 0f),
                 strokeWidth = 1.5.dp,
                 color = MaterialTheme.colorScheme.onPrimary
-
             )
             Text(
                 text = text,
@@ -87,25 +86,23 @@ fun RuniqueOutlinedActionButton(
         border = BorderStroke(
             width = 0.5.dp,
             color = MaterialTheme.colorScheme.onBackground
-
         ),
         shape = RoundedCornerShape(100f),
         modifier = modifier
             .height(IntrinsicSize.Min)
     ) {
-        Box (
+        Box(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(vertical = 8.dp),
             contentAlignment = Alignment.Center
-        ){
+        ) {
             CircularProgressIndicator(
                 modifier = Modifier
                     .size(15.dp)
                     .alpha(if (isLoading) 1f else 0f),
                 strokeWidth = 1.5.dp,
                 color = MaterialTheme.colorScheme.onBackground
-
             )
             Text(
                 text = text,
