@@ -32,6 +32,7 @@ class EncryptedSessionStorage(
             sharedPreferences
                 .edit()
                 .putString(KEY_AUTH_INFO, json)
+                .commit()
         }
     }
 
