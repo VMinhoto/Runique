@@ -50,7 +50,7 @@ fun RuniqueToolbar(
     // String to hold the title of the Bar
     title: String,
     // Modifier to be applied to the toolbar
-    modifier: Modifier,
+    modifier: Modifier = Modifier,
     // List of items to be displayed in the menu
     menuItems: List<DropDownItem> = emptyList(),
     // Function to be called when the back button is clicked
