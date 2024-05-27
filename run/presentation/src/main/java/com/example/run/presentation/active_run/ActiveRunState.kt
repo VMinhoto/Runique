@@ -18,5 +18,10 @@ data class ActiveRunState(
     // Boolean representing if the run is finished.
     val isRunFinished: Boolean = false,
     // Boolean representing if the run is saving to display the saving animation.
-    val isSavingRun: Boolean = false
+    val isSavingRun: Boolean = false,
+    // Boolean representing to check if we should show the location rationale.
+    val showLocationRationale: Boolean = false,
+    // Boolean representing to check if we should show the notification rationale.
+    val showNotificationRationale: Boolean = false,
+
 )
