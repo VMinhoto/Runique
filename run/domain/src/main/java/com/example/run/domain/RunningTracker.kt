@@ -1,5 +1,5 @@
 @file:OptIn(ExperimentalCoroutinesApi::class, ExperimentalCoroutinesApi::class,
-    ExperimentalCoroutinesApi::class
+    ExperimentalCoroutinesApi::class, ExperimentalCoroutinesApi::class
 )
 
 package com.example.run.domain
@@ -36,7 +36,7 @@ class RunningTracker(
     private val isObservingLocation = MutableStateFlow(false)
 
     private val _elapsedTime = MutableStateFlow(Duration.ZERO)
-    private val elapsedTime = _elapsedTime.asStateFlow()
+    val elapsedTime = _elapsedTime.asStateFlow()
 
 
     val currentLocation = isObservingLocation
