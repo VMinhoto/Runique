@@ -2,7 +2,6 @@
 
 package com.example.run.presentation.run_overview.components
 
-import android.provider.ContactsContract.Data
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -46,7 +45,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.SubcomposeAsyncImage
-import com.example.core.domain.Run.Run
+import com.example.core.domain.run.Run
 import com.example.core.domain.location.Location
 import com.example.core.presentation.designsystem.CalendarIcon
 import com.example.core.presentation.designsystem.RunOutlinedIcon
@@ -312,7 +311,7 @@ private fun RunListItemPreview() {
                 location = Location(0.0, 0.0),
                 maxSpeedKmh = 15.6234,
                 totalElevationMeters = 123,
-                mapPictureUrl = "null"
+                mapPictureUrl = null
             ).toRunUi(),
             onDeleteClick = { /*TODO*/ })
     }

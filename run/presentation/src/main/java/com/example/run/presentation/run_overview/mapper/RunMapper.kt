@@ -1,6 +1,6 @@
 package com.example.run.presentation.run_overview.mapper
 
-import com.example.core.domain.Run.Run
+import com.example.core.domain.run.Run
 import com.example.core.presentation.ui.formatted
 import com.example.core.presentation.ui.toFormattedKm
 import com.example.core.presentation.ui.toFormattedKmh

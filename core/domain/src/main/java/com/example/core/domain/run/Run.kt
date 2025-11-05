@@ -1,4 +1,4 @@
-package com.example.core.domain.Run
+package com.example.core.domain.run
 
 import com.example.core.domain.location.Location
 import java.time.ZonedDateTime
@@ -13,7 +13,7 @@ data class Run(
     val location: Location,
     val maxSpeedKmh: Double,
     val totalElevationMeters: Int,
-    val mapPictureUrl: String
+    val mapPictureUrl: String?
 ) {
     val avgSpeedKmh: Double
         get() = (distanceMeters / 1000.0) / duration.toDouble(DurationUnit.HOURS)
