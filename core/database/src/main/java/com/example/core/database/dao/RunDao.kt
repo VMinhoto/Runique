@@ -1,10 +1,12 @@
 package com.example.core.database.dao
 
+import androidx.room.Dao
 import androidx.room.Query
 import androidx.room.Upsert
 import com.example.core.database.entity.RunEntity
 import kotlinx.coroutines.flow.Flow
 
+@Dao
 interface RunDao {
 
     @Upsert
